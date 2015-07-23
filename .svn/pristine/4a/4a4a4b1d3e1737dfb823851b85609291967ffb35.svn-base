@@ -1,0 +1,293 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dfws.shhreader"
+    android:versionCode="201"
+    android:versionName="2.0.1" >
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="16" />
+	<permission android:name="signatureOrSystem" android:protectionLevel="signatureOrSystem" />
+    <supports-screens 
+        android:anyDensity="true" 
+        android:smallScreens="true" 
+        android:normalScreens="true" 
+        android:largeScreens="true" 
+        android:resizeable="true" />
+    <uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 可选的权限 -->
+    <!-- 启用错误分析功能，须添加该权限 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <application
+        android:name="com.dfws.shhreader.activity.AppInstance"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:allowBackup="true" 
+        android:hardwareAccelerated="true">
+        <activity
+            android:name="com.dfws.shhreader.activity.BaseFrameActivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.dfws.shhreader.activity.MainActivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:launchMode="singleTop" 
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait"
+            android:hardwareAccelerated="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>        
+      <!-- ###################注册SDK使用的Activity######################-->
+        <!--分享编辑页-->
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+        <!-- ############ QQ空间和QQ SSO授权的Activity注册 ############ -->
+        <activity android:name="com.tencent.tauth.AuthActivity" />
+        <!-- ###################添加UmengAppkey###################### -->
+           <!-- 个推配置的第三方参数属性 -->
+        <meta-data
+        android:name="UMENG_APPKEY"
+        android:value="5164d27c56240b56e90002c6" >
+        </meta-data>
+    	<meta-data
+        android:name="UMENG_CHANNEL"
+        android:value="default" />
+        <meta-data
+            android:name="appid"
+            android:value="s2CsPGkMIP9TQA2MCQ6JW" />
+        <meta-data
+            android:name="appkey"
+            android:value="czrOc9Yik495ECHTAbsvpA" />
+        <meta-data
+            android:name="appsecret"
+            android:value="38yqkWc5pEA2iwqKdGsyA9" />
+        <activity
+            android:name="com.igexin.sdk.GexinSdkActivity"
+            android:excludeFromRecents="true"
+            android:process="com.dfws.shhreader.pushservice"
+            android:taskAffinity="android.task.GexinSdkActivityTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.igexin.action.popupact.com.dfws.shhreader" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <service
+            android:name="com.igexin.sdk.aidl.GexinMsgService"
+            android:label="NotificationCenterAIDL"
+            android:process="com.dfws.shhreader.pushservice" >
+            <intent-filter>
+                <action android:name="com.igexin.sdk.aidl.action.com.dfws.shhreader" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.igexin.sdk.GexinMainService"
+            android:label="NotificationCenter"
+            android:process="com.dfws.shhreader.pushservice" >
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.com.dfws.shhreader" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name="com.dfws.shhreader.activity.GexinSdkMsgReceiver" >
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.s2CsPGkMIP9TQA2MCQ6JW" />
+                <!-- com.igexin.sdk.action.第三方的appId -->
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.igexin.sdk.GexinSdkReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+         <service
+            android:name="sdk.download.DownloadService"
+            android:process="com.dfws.shhreader.pushservice" />
+
+        <receiver
+            android:name="sdk.download.DownloadReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="sdk.download.DownloadProvider"
+            android:authorities="sdk.download.com.dfws.shhreader"
+            android:process="com.dfws.shhreader.pushservice" />
+        
+
+      <!-- 下载APK服务 -->
+     <service 
+         android:name="com.dfws.shhreader.activity.DownloadService">
+         <intent-filter >
+             <action android:name="service"/>
+         </intent-filter>
+     </service>  
+     <!-- 下载文件服务 -->
+          <service 
+         android:name="com.dfws.shhreader.activity.DownloadFileService">
+         <intent-filter >
+             <action android:name="service"/>
+         </intent-filter>
+     </service>  
+		<!-- ############################################################ -->          
+      <!-- 第一次进程序引导页 -->
+           <activity
+             android:name="com.dfws.shhreader.activity.SplashActivity"
+             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"/>
+        <!-- 图片 -->
+        <activity 
+            android:name="com.dfws.shhreader.activity.image.ImageActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+            android:screenOrientation="portrait">            
+        </activity>
+         <activity 
+            android:name="com.dfws.shhreader.activity.image.ImageActivitys"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+            android:screenOrientation="portrait">            
+        </activity>
+         <!-- 报告 -->
+        <activity
+            android:name="com.dfws.shhreader.activity.report.ReportActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+            android:screenOrientation="portrait">            
+        </activity>
+        <!-- 人物 -->
+        <activity
+            android:name="com.dfws.shhreader.activity.figure.FigureActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+            android:screenOrientation="portrait">            
+        </activity>
+        <!-- 新技术 -->
+        <activity
+            android:name="com.dfws.shhreader.activity.technology.TechnologyActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+            android:screenOrientation="portrait">            
+        </activity>
+        <!-- 更多 -->
+        <activity
+            android:name="com.dfws.shhreader.activity.report.MoreActivity"
+            android:theme="@style/Theme.UMDialog">           
+        </activity>
+        <!-- 登陆 -->
+        <activity 
+            android:name="com.dfws.shhreader.activity.personalcenter.LoginActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait">                  
+        </activity>
+        <!-- 登出 -->
+        <activity
+            android:name="com.dfws.shhreader.activity.personalcenter.LogoutActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait">
+        </activity>
+        <!-- 注册 -->
+        <activity 
+            android:name="com.dfws.shhreader.activity.personalcenter.RegisterActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait">            
+        </activity>
+         <!-- 分享 -->
+        <activity 
+            android:name="com.dfws.shhreader.activity.ShareActivity"
+            android:theme="@style/Theme.UMDialog">                    
+        </activity>
+        <!-- 我的信息-->
+        <activity 
+             android:name="com.dfws.shhreader.activity.personalcenter.MessageActivity"
+             android:theme="@style/cus_activity_style"
+            android:screenOrientation="portrait"></activity>
+          <!-- 我的收藏 -->
+          <activity 
+           android:name="com.dfws.shhreader.activity.personalcenter.CollectionActivity"
+           android:theme="@style/cus_activity_style"
+           android:screenOrientation="portrait"></activity>
+          <!-- 设置   下面 -->
+          <activity 
+          android:name="com.dfws.shhreader.activity.personalcenter.SetingActivity"
+          android:theme="@style/cus_activity_style"
+          android:screenOrientation="portrait"></activity>
+        <!-- 意见反馈 -->
+         <activity
+         android:name="com.dfws.shhreader.activity.set.SetFeedbackActivity"
+         android:theme="@style/cus_activity_style"
+         android:screenOrientation="portrait">
+         </activity>                         
+       <!-- 用户引导 -->
+        <activity
+            android:name="com.dfws.shhreader.activity.set.SetGuideActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >            
+        </activity>
+        <!-- 关于 -->
+          <activity
+         android:name="com.dfws.shhreader.activity.set.SetAboutActivity"
+         android:theme="@style/cus_activity_style"
+         android:screenOrientation="portrait">                  
+         </activity>          
+      <!-- 新闻详细页 -->
+      <activity
+         android:name="com.dfws.shhreader.activity.NewsDetailActivity"
+         android:screenOrientation="portrait"
+         android:theme="@style/cus_activity_style">
+     </activity>
+	<activity
+         android:name="com.dfws.shhreader.activity.CommentFromRightActivity"
+         android:screenOrientation="portrait"
+         android:theme="@style/cus_activity_style">
+     </activity>
+     <activity
+         android:name="com.dfws.shhreader.activity.CommentFromBottomActivity"
+         android:screenOrientation="portrait"
+         android:theme="@style/cus_activity_style_in_bottom">
+     </activity>
+     <!-- 浏览网页图片 -->
+     <activity
+         android:name="com.dfws.shhreader.activity.ShowImageActivity"
+         android:screenOrientation="portrait"
+         android:theme="@style/cus_activity_style">
+     </activity>
+     <!-- 查看原文 -->
+      <activity
+         android:name="com.dfws.shhreader.activity.NewsResourceWebActivity"
+         android:screenOrientation="portrait"
+         android:theme="@style/cus_activity_style">
+     </activity>   
+    </application>
+</manifest>

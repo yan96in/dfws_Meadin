@@ -1,0 +1,14 @@
+<resources>
+
+    <!--
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for sw600dp devices (e.g. 7" tablets) here.
+    -->
+	<dimen name="dialog_btn_font_size">28sp</dimen>
+	<dimen name="dialog_txt_font_size">23sp</dimen>
+	<dimen name="dialog_content_pading">15dp</dimen>
+	
+	 <!-- ****************news detail*************** -->
+    <dimen name="news_detail_menu_horizontal_margin">88dp</dimen>
+    <dimen name="news_detail_menu_width">91dp</dimen>
+</resources>

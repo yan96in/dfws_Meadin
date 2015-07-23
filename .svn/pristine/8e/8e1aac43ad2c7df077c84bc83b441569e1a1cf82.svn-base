@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/night_sets_model_color"
+    >
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/list_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/ic_list_line_black"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/list_selector" />
+
+	<RelativeLayout
+        android:id="@+id/rela_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/page_news_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_content_night_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleSmallInverse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminate="false"
+                android:indeterminateDrawable="@drawable/progressbars" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:text="@string/news_list_loading"
+                android:textColor="@color/white"
+                android:textSize="@dimen/base_list_item_title_font_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_reload"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_content_night_bg"
+            android:gravity="center"
+            android:orientation="vertical" 
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dip"
+                android:layout_gravity="center"
+                android:text="@string/tabs_load_error" 
+                android:textColor="@color/whitesomke"
+                android:textSize="18sp"/>
+
+            <ImageButton
+                android:id="@+id/ibtn_reloading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/ic_reload_btn"
+                android:contentDescription="@string/app_name" 
+                android:visibility="visible" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

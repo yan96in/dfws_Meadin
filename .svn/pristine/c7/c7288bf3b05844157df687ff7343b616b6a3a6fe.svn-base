@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="image_font">#cbcccc</color>
+    <color name="image_bg">#d6d5d5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blue">#0066FF</color>
+    <color name="red">#FF0000</color>
+    <color name="no_color">#00000000</color>
+    <color name="bg_color">#F4F3F3</color>
+    <color name="bg_color_deep">#E5E5E5</color>
+    <color name="black">#000000</color>
+    <color name="text_color">#434343</color>
+    <color name="black_half">#50000000</color>
+    <color name="share_dialog_bg">#ecedee</color>
+	<color name="actionbar_bg">#ecedee</color>
+	<color name="menu_bg">#dadcdd</color>
+	<color name="header_bg">#424a92</color><!-- 深蓝 -->
+    <color name="dialog_btn_press">#FFFF00</color>
+    <color name="lightyellow">#FFFFE0</color>
+    <color name="whitesomke">#fff5f5f5</color><!-- 烟白色——首页底部菜单 -->
+    <color name="whitesomke1">#55f5f5f5</color><!-- 烟白色——首页底部菜单 -->
+    <color name="lightred">#b3ff5400</color><!-- 淡红色———今日头条背景 -->
+    <color name="darkcyan">#b3009bc7</color><!-- 深青色———首页item背景 -->
+    <color name="ghostwhite">#00f8f8f8</color><!-- 幽灵白————登录和账号管理背景 -->
+    <color name="lavender">#00f2f2f2</color><!-- 淡紫色————来源、回复背景 -->
+    <color name="news_detail_datetime">#ff666666</color><!-- 灰色,阅读页面，日期和来源 -->
+    <color name="unfocused">#ffffff</color>
+    <color name="divide_line">#ff696969</color><!-- DimGray黑灰色————阅读菜单分割线 -->
+    <color name="lightgray">#ffefefef</color><!--  阅读页背景 -->
+    <color name="news_page_bg">#f0f0f0</color>
+    <color name="Lightgreen">#90EE90</color>
+    <color name="darkseagreen">#8FBC8F</color>
+    <color name="gray">#FFECF5E4</color>
+    <color name="lucency">#e0000000</color>
+    <color name="night_main_color">#88363b41</color>
+    <color name="day_main_color">#99ffffff</color>
+    <!-- 设置页面 -->
+	<color name="night_sets_main_color">#363b41</color>
+    <color name="night_sets_model_color">#23262b</color>
+    <color name="night_sets_text_color">#ffffff</color>
+    <color name="night_list_item_bg">#24272c</color>
+    <color name="sets_main_color">#ecedee</color>
+    <color name="sets_model_color">#FFFFFF</color>
+    <color name="sets_text_color">#000000</color>
+    
+</resources>

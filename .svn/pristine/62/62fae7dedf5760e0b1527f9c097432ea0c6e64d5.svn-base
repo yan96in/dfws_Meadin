@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/night_sets_main_color"
+    android:orientation="vertical"
+    android:padding="10.0dip" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/share_to"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/dialog_title_size" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="10.0dip" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16.0dip"
+            android:paddingLeft="16dip"
+            android:paddingRight="16dip" >
+
+            <TextView
+                android:id="@+id/txt_share_sina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_share_dialog_item_bg"
+                android:drawableTop="@drawable/sina"
+                android:gravity="center"
+                android:padding="5dip"
+                android:singleLine="true"
+                android:text="@string/share_sina"
+                android:textColor="@color/gray"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/txt_share_tencent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_share_dialog_item_bg"
+                android:drawableTop="@drawable/ttencent"
+                android:gravity="center"
+                android:padding="5dip"
+                android:text="@string/share_tencent"
+                android:textColor="@color/gray"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/txt_share_qqzone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_share_dialog_item_bg"
+                android:drawableTop="@drawable/qq"
+                android:gravity="center"
+                android:padding="5dip"
+                android:text="@string/share_qqspace"
+                android:textColor="@color/gray"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/txt_share_weixin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_share_dialog_item_bg"
+                android:drawableTop="@drawable/messagee"
+                android:gravity="center"
+                android:padding="5dip"
+                android:text="@string/share_weixin_friend"
+                android:textColor="@color/gray"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16.0dip"
+            android:paddingLeft="16dip"
+            android:paddingRight="16dip" >
+
+            <TextView
+                android:id="@+id/txt_share_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_share_dialog_item_bg"
+                android:drawableTop="@drawable/mmmessagex"
+                android:gravity="center"
+                android:text="@string/share_weixin_circle"
+                android:textColor="@color/gray"
+                android:textSize="13.0sp" />
+
+            <TextView
+                android:id="@+id/txt_share_sms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_share_dialog_item_bg"
+                android:drawableTop="@drawable/message"
+                android:gravity="center"
+                android:padding="5dip"
+                android:text="@string/share_sms"
+                android:textColor="@color/gray"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/txt_share_emile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_share_dialog_item_bg"
+                android:drawableTop="@drawable/email"
+                android:gravity="center"
+                android:padding="5dip"
+                android:text="@string/share_email"
+                android:textColor="@color/gray"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/email"
+                android:gravity="center"
+                android:padding="5dip"
+                android:text="@string/share_email"
+                android:textColor="@color/gray"
+                android:textSize="14.0sp"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0dip"
+        android:background="@color/blue" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1.0dip" >
+
+        <TextView
+            android:id="@+id/txt_share__cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_share_dialog_item_bg"
+            android:gravity="center_horizontal"
+            android:padding="10.0dip"
+            android:text="@string/cancel"
+            android:textColor="@color/blue"
+            android:textSize="20.0sp" />
+    </LinearLayout>
+
+</LinearLayout>

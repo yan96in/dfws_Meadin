@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_dialog_update_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/share_dialog_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="@dimen/dialog_content_pading" >
+
+        <TextView
+            android:id="@+id/txt_dialog_update_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="版本"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dialog_title_size" />
+
+        <TextView
+            android:id="@+id/txt_dialog_update_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15.0dip"
+            android:layout_marginTop="15.0dip"
+            android:text="1.全新改版，阅读更美观！"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dialog_txt_font_size" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dip"
+        android:background="@drawable/ic_list_line_white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1.0dip" >
+
+        <TextView
+            android:id="@+id/txt_dialog_update_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center_horizontal"
+            android:padding="10.0dip"
+            android:text="@string/apk_update_ok"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/dialog_btn_font_size" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="match_parent"
+            android:background="#aacccccc" />
+
+        <TextView
+            android:id="@+id/txt_dialog_update_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center_horizontal"
+            android:padding="10.0dip"
+            android:text="@string/apk_update_cancel"
+            android:textSize="@dimen/dialog_btn_font_size" />
+    </LinearLayout>
+
+</LinearLayout>

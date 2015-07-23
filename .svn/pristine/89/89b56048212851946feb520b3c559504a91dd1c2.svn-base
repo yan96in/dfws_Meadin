@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_dialog_clear_buffer_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/share_dialog_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="15dip" >
+
+        <TextView
+            android:id="@+id/txt_dialog_clear_buffer_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/sets_dialog_clear_cache_txt"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dip"
+        android:background="@drawable/ic_list_line_white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1.0dip" >
+
+        <TextView
+            android:id="@+id/txt_dialog_clear_buffer_btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center_horizontal"
+            android:padding="10.0dip"
+            android:text="@string/ok"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/dialog_btn_font_size" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="match_parent"
+            android:background="#aacccccc" />
+
+        <TextView
+            android:id="@+id/txt_dialog_clear_buffer_btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center_horizontal"
+            android:padding="10.0dip"
+            android:text="@string/cancel"
+            android:textSize="@dimen/dialog_btn_font_size" />
+    </LinearLayout>
+
+</LinearLayout>

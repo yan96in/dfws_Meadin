@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/header_bg"
+        android:padding="10dip" >
+
+        <ImageView
+            android:id="@+id/login_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/selector_login_bg"
+            android:src="@drawable/selector_goback_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="登录"
+            android:textColor="@color/white"
+            android:textSize="@dimen/main_label" />
+
+        <TextView
+            android:id="@+id/login_regist_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_login_bg"
+            android:text="注册"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <AutoCompleteTextView
+        android:id="@+id/login_userid_etxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:digits="@string/check_login"
+        android:drawableLeft="@drawable/ic_iput_user_52_52"
+        android:gravity="left|center_vertical"
+        android:hint="邮箱或迈点通行证"
+        android:maxLength="31" />
+
+    <AutoCompleteTextView
+        android:id="@+id/login_password_etxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:digits="@string/check_login"
+        android:drawableLeft="@drawable/ic_iput_password_52_52"
+        android:gravity="left|center_vertical"
+        android:hint="密码"
+        android:textColor="@color/black"
+        android:maxLength="20"
+        android:inputType="textPassword"/>
+
+    <TextView
+        android:id="@+id/login_loginbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/selector_login_bg"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="登录"
+        android:textColor="@color/white"
+        android:textSize="@dimen/main_label" />
+    <LinearLayout
+        android:id="@+id/page_news_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_content_night_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleSmallInverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="false"
+            android:indeterminateDrawable="@drawable/progressbars" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/whitesomke"
+            android:text="@string/news_list_loading"
+            android:textSize="@dimen/base_list_item_title_font_size" />
+    </LinearLayout>
+
+</LinearLayout>

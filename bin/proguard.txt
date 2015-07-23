@@ -1,0 +1,182 @@
+# view res/layout/layout_base_list_header.xml #generated:6
+# view res/layout/layout_scan_image.xml #generated:8
+# view res/layout/night_layout_base_list_header.xml #generated:5
+# view res/layout/night_view_pager.xml #generated:132
+# view res/layout/view_pager.xml #generated:131
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view AndroidManifest.xml #generated:47
+-keep class com.dfws.shhreader.activity.AppInstance { <init>(...); }
+
+# view AndroidManifest.xml #generated:53
+-keep class com.dfws.shhreader.activity.BaseFrameActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:288
+-keep class com.dfws.shhreader.activity.CommentFromBottomActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:283
+-keep class com.dfws.shhreader.activity.CommentFromRightActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:174
+-keep class com.dfws.shhreader.activity.DownloadFileService { <init>(...); }
+
+# view AndroidManifest.xml #generated:168
+-keep class com.dfws.shhreader.activity.DownloadService { <init>(...); }
+
+# view AndroidManifest.xml #generated:136
+-keep class com.dfws.shhreader.activity.GexinSdkMsgReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:60
+-keep class com.dfws.shhreader.activity.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:278
+-keep class com.dfws.shhreader.activity.NewsDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:300
+-keep class com.dfws.shhreader.activity.NewsResourceWebActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:238
+-keep class com.dfws.shhreader.activity.ShareActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:294
+-keep class com.dfws.shhreader.activity.ShowImageActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:181
+-keep class com.dfws.shhreader.activity.SplashActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:203
+-keep class com.dfws.shhreader.activity.figure.FigureActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:186
+-keep class com.dfws.shhreader.activity.image.ImageActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:191
+-keep class com.dfws.shhreader.activity.image.ImageActivitys { <init>(...); }
+
+# view AndroidManifest.xml #generated:249
+-keep class com.dfws.shhreader.activity.personalcenter.CollectionActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:220
+-keep class com.dfws.shhreader.activity.personalcenter.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:226
+-keep class com.dfws.shhreader.activity.personalcenter.LogoutActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:243
+-keep class com.dfws.shhreader.activity.personalcenter.MessageActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:232
+-keep class com.dfws.shhreader.activity.personalcenter.RegisterActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:255
+-keep class com.dfws.shhreader.activity.personalcenter.SetingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:215
+-keep class com.dfws.shhreader.activity.report.MoreActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:197
+-keep class com.dfws.shhreader.activity.report.ReportActivity { <init>(...); }
+
+# view res/layout/layout_about_page.xml #generated:23
+-keep class com.dfws.shhreader.activity.set.PageControlView { <init>(...); }
+
+# view AndroidManifest.xml #generated:272
+-keep class com.dfws.shhreader.activity.set.SetAboutActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:261
+-keep class com.dfws.shhreader.activity.set.SetFeedbackActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:267
+-keep class com.dfws.shhreader.activity.set.SetGuideActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:209
+-keep class com.dfws.shhreader.activity.technology.TechnologyActivity { <init>(...); }
+
+# view res/layout/main_layout_image_minute.xml #generated:14
+-keep class com.dfws.shhreader.adapter.MyGallery { <init>(...); }
+
+# view res/layout/layout_about_page.xml #generated:8
+-keep class com.dfws.shhreader.adapter.XyzGallery { <init>(...); }
+
+# view res/layout/page_figure.xml #generated:9
+# view res/layout/page_report.xml #generated:7
+# view res/layout/page_technique.xml #generated:7
+-keep class com.dfws.shhreader.commonality.XListView { <init>(...); }
+
+# view res/layout/main.xml #generated:2
+-keep class com.dfws.shhreader.slidingmenu.view.SlidingMenu { <init>(...); }
+
+# view res/layout/layout_guide.xml #generated:7
+# view res/layout/main_layout_image_minutes.xml #generated:8
+-keep class com.dfws.shhreader.ui.CustomViewPager { <init>(...); }
+
+# view res/layout/layout_image_viewpager_itemview.xml #generated:6
+-keep class com.dfws.shhreader.ui.ZoomableImageView { <init>(...); }
+
+# view res/layout/umeng_socialize_comment_detail.xml #generated:23
+-keep class com.google.android.maps.MapView { <init>(...); }
+
+# view res/layout/layout_comment.xml #generated:52
+# view res/layout/night_layout_comment.xml #generated:52
+# view res/layout/night_page_image.xml #generated:8
+# view res/layout/night_page_news.xml #generated:7
+# view res/layout/page_image.xml #generated:8
+# view res/layout/page_news.xml #generated:7
+-keep class com.handmark.pulltorefresh.library.PullToRefreshListView { <init>(...); }
+
+# view res/layout/layout_news_detail.xml #generated:8
+# view res/layout/layout_news_detail_web.xml #generated:8
+-keep class com.handmark.pulltorefresh.library.PullToRefreshScrollView { <init>(...); }
+
+# view AndroidManifest.xml #generated:127
+-keep class com.igexin.sdk.GexinMainService { <init>(...); }
+
+# view AndroidManifest.xml #generated:106
+-keep class com.igexin.sdk.GexinSdkActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:142
+-keep class com.igexin.sdk.GexinSdkReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:119
+-keep class com.igexin.sdk.aidl.GexinMsgService { <init>(...); }
+
+# view res/layout/slidingmenumain.xml #generated:2
+-keep class com.jeremyfeinstein.slidingmenu.lib.SlidingMenu { <init>(...); }
+
+# view AndroidManifest.xml #generated:86
+-keep class com.tencent.tauth.AuthActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:77
+-keep class com.umeng.socialize.view.ShareActivity { <init>(...); }
+
+# view res/layout/umeng_socialize_post_share.xml #generated:2
+# view sw550dp-large-v13/res/layout-sw550dp-large-v13/umeng_socialize_post_share.xml #generated:2
+-keep class com.umeng.socialize.view.wigets.KeyboardListenRelativeLayout { <init>(...); }
+
+# view res/layout/umeng_socialize_comment_view.xml #generated:30
+-keep class com.umeng.socialize.view.wigets.PullToRefreshListView { <init>(...); }
+
+# view res/layout/umeng_socialize_at_view.xml #generated:21
+-keep class com.umeng.socialize.view.wigets.SearchBox { <init>(...); }
+
+# view res/layout/umeng_socialize_at_view.xml #generated:38
+-keep class com.umeng.socialize.view.wigets.SectionListView { <init>(...); }
+
+# view res/layout/umeng_socialize_at_view.xml #generated:47
+-keep class com.umeng.socialize.view.wigets.SlideBar { <init>(...); }
+
+# view res/layout/umeng_socialize_ucenter_platform_item.xml #generated:31
+-keep class com.umeng.socialize.view.wigets.SwitchImageView { <init>(...); }
+
+# view AndroidManifest.xml #generated:162
+-keep class sdk.download.DownloadProvider { <init>(...); }
+
+# view AndroidManifest.xml #generated:154
+-keep class sdk.download.DownloadReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:150
+-keep class sdk.download.DownloadService { <init>(...); }
+
+# onClick res/layout/layout_news_resource_web.xml #generated:19
+-keepclassmembers class * { *** onViewClick(...); }
+

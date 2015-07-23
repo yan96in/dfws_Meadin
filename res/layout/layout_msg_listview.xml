@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+
+    >
+     <RelativeLayout 
+        android:id="@+id/msg_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"      
+        android:background="@color/white">                       
+          <TextView
+            
+            android:id="@+id/msg_title"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="今天天气真好"
+            android:layout_marginRight="45dp"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textSize="18sp" />
+          <CheckBox
+              android:id="@+id/mes_checkbox"
+              android:layout_alignParentRight="true"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" 
+              android:layout_centerVertical="true"
+              android:visibility="gone"
+              android:checked="false"
+              android:focusable="false"
+              android:focusableInTouchMode="false"
+              android:button="@drawable/message_checkbox"/>
+
+        </RelativeLayout>
+</LinearLayout>

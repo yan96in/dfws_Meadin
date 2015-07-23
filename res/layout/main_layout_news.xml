@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageSwitcher
+        android:id="@+id/main_layout_information_child_moveimg_ImageSwitcher1"
+        android:layout_width="fill_parent"
+        android:layout_height="130dp" 
+        >
+    </ImageSwitcher>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="130dp" >
+
+        <TextView
+            android:id="@+id/main_layout_information_child_moveimg_textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@color/black"
+            android:gravity="center_horizontal|center_vertical"
+            android:singleLine="true"
+            android:text="这里新闻小标题显示的地方"
+            android:textColor="@color/white" />
+
+        <RadioGroup
+            android:id="@+id/main_layout_information_child_moveimg_RadioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/main_layout_information_child_moveimg_textView1"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="2dp"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/rg_head_move_bg"
+                android:button="@null" />
+
+            <RadioButton
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/rg_head_move_bg"
+                android:button="@null" />
+
+            <RadioButton
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/rg_head_move_bg"
+                android:button="@null" />
+        </RadioGroup>
+    </RelativeLayout>
+
+</FrameLayout>

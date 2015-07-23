@@ -1,0 +1,38 @@
+<!--
+  Copyright 2011 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<resources>
+
+    <dimen name="slidingmenu_offset">300dp</dimen>
+
+    <integer name="num_cols">1</integer>
+	<dimen name="main_label">26sp</dimen>
+    <dimen name="dialog_title_size">26sp</dimen>
+    <dimen name="dialog_btn_font_size">28sp</dimen>
+    <dimen name="dialog_txt_font_size">20sp</dimen>
+    <dimen name="dialog_content_pading">14dp</dimen>
+    <dimen name="base_list_header_imgtitle_font_size">14sp</dimen>
+    <dimen name="base_list_item_title_font_size">26sp</dimen>
+    <dimen name="base_tab_font_size">16sp</dimen>
+    <dimen name="base_item_padding">10dp</dimen>
+    <integer name="base_item_ems">10</integer>
+    <dimen name="base_item_title_font_size">14sp</dimen>
+    <dimen name="base_item_time_font_size">12sp</dimen>
+    
+         <!-- ****************news detail*************** -->
+    <dimen name="news_detail_menu_horizontal_margin">28dp</dimen>
+    <dimen name="news_detail_menu_width">58dp</dimen>
+</resources>

@@ -1,0 +1,67 @@
+<!--
+  Copyright 2011 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<resources>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- ****************slidingmenu**************** -->
+    <dimen name="slidingmenu_offset">100dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">8dp</dimen>
+    
+    <!-- *********************home pager************************ -->
+    <dimen name="base_list_header_imgtitle_font_size">12sp</dimen>
+    <dimen name="base_list_item_title_font_size">22sp</dimen>
+	<dimen name="main_label">24sp</dimen>
+    <integer name="num_cols">1</integer>
+    <dimen name="base_tab_font_size">14sp</dimen>
+    <dimen name="base_item_padding">8dp</dimen>
+    <dimen name="base_item_title_font_size">14sp</dimen>
+    <dimen name="base_item_time_font_size">12sp</dimen>
+    <integer name="base_item_ems">8</integer>
+    <dimen name="base_item_img_width">64dp</dimen>
+    <dimen name="base_item_img_height">48dp</dimen>
+    
+    <!-- ****************custom dialog*************** -->
+    <dimen name="dialog_title_size">22sp</dimen>
+    <dimen name="dialog_btn_font_size">22sp</dimen>
+    <dimen name="dialog_txt_font_size">16sp</dimen>
+    <dimen name="dialog_content_pading">10dp</dimen>
+    <dimen name="dialog_sets_font_size_title">20sp</dimen>
+    <dimen name="dialog_sets_font_size">18sp</dimen>
+    <dimen name="dialog_sets_font_size_sub">14sp</dimen>
+    
+     <!-- ****************news detail*************** -->
+    <dimen name="news_detail_menu_horizontal_margin">24dp</dimen>
+    <dimen name="news_detail_notice">9sp</dimen>
+    <dimen name="news_detail_menu_width">54dp</dimen>
+    
+     <!-- ****************sets*************** -->
+    <dimen name="sets_title_size">14sp</dimen>
+    <dimen name="sets_content_size">19sp</dimen>
+    <dimen name="sets_content_size_gray">14sp</dimen>
+    
+    <!-- ****************comment*************** -->
+    <dimen name="comment_title">22sp</dimen>
+    <dimen name="comment_user_name">16sp</dimen>
+    <dimen name="comment_text">19sp</dimen>
+    <dimen name="comment_time">14sp</dimen>
+    <dimen name="comment_count">14sp</dimen>
+    <dimen name="comment_new">18sp</dimen>
+    <dimen name="comment_support">11sp</dimen>
+
+</resources>

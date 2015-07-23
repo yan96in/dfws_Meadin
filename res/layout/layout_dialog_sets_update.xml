@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dialog_content_pading"
+    android:orientation="vertical" >
+    <TextView 
+        android:id="@+id/txt_sets_dialog_update_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="middle"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/dialog_title_size"
+        android:textColor="@color/black"
+        android:text="2.0版本更新"
+        />
+
+    <TextView 
+        android:id="@+id/txt_dialog_sets_update_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dialog_content_pading"
+        android:paddingBottom="@dimen/dialog_content_pading"
+        android:gravity="left"
+        android:textSize="@dimen/dialog_txt_font_size"
+        android:textColor="@color/black"
+        android:text="1、全新改版，阅读更精美\n2、全新改版，阅读更精美"
+        />
+</LinearLayout>

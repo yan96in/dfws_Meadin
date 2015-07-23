@@ -1,0 +1,153 @@
+<resources>
+
+
+    <string name="app_name">迈点阅读</string>
+    <string name="check_net_status">网络连接异常，请检查网络</string>
+    <string name="userNameError">用户名不能为空!</string>
+    <string name="passwordError">密码不能为空!</string>
+    <string name="netstate_notice">网络连接已断开，请检查网络!</string>
+    <string name="version">v2.0.0</string>
+   
+    <!-- ***********登录注册************ -->
+    <string name="strulst_str">账号或密码不能为空</string>
+    <string  name="strulst_reg">该邮箱已注册</string>
+    <string  name="strulst_reg_1">用户名不能为空</string>
+    <string  name="strulst_reg_2">密码不能为空</string>
+    <string  name="strulst_login_1">登录失败</string>
+    <string  name="strulst_login_11">用户名与密码不匹配，登录失败</string>
+    <string  name="strulst_login_2">登录成功</string>
+    <string  name="strulst_loging">注册成功，正在自动登录中...</string>
+    <string  name="strulst_login_out">注销成功</string>
+    <string  name="strulst_reg_email">邮箱格式不正确</string>
+     <!-- ***********收藏************ -->
+    <string  name="strulst_create">"已添加到\"我的收藏\"！"</string>
+    <string  name="strulst_failure">收藏失败！</string>
+    <string  name="strulst_create_1">已取消收藏！</string>
+     <string  name="strulst_create_2">取消失败！</string>
+    <!-- ***********反馈************ -->
+    <string  name="strulst_erro_content">内容不能为空!</string>
+       <string  name="strulst_erro_number">联系方式不能为空！</string>
+    
+    <!-- **************main tabs******************** -->
+    <string name="tab_figure">人物</string>
+    <string name="tab_image">图片</string>
+    <string name="tab_report">报告</string>
+    <string name="tab_technique">新技术</string>
+    <string name="tab_news">新闻</string>
+    <string name="tabs_load_error">加载失败！</string>
+    
+    <!-- ************************新闻********************** -->
+    <string name="news_header_img_def_title">没有可用的数据</string>
+    <string name="news_list_loading">加载数据中...</string>
+    
+     <!-- ************************新闻详细 ********************** -->
+    <string name="news_detail_notice">5</string>
+    <string name="font_size">字体大小</string>
+    <string name="font_size_small">小</string>
+    <string name="font_size_mid">中</string>
+    <string name="font_size_big">大</string>
+    <string name="font_size_super_big">超大</string>
+    <string name="night_mode">夜间模式</string>
+
+    <!-- ********************设置********************* -->
+    <string name="offline_download">当前为3G/2G网络，离线下载消耗较多流量，确定继续吗？</string>
+    <string name="sets_title">设置</string>
+    <string name="sets_dialog_clear_cache_txt">确认要清除所有缓存数据吗？</string>
+    <string  name="check_login">qwertyuiopasdfghjklzxcvbnm0123456789@_.-</string>
+    <string name="sets_push_set">推送设置</string>
+    <string name="sets_news_push">新闻推送</string>
+    <string name="sets_push_ring">推送铃声</string>
+    <string  name="sets_reading_set">阅读设置</string>
+     <string name="sets_img_load_mode">图片加载模式</string>
+    <string name="sets_clear_buffer">清除缓存</string>
+    <string name="sets_clear_buffer_describe">清除当前缓存数据，共</string>
+    <string name="sets_img_null">无图浏览</string>
+    <string name="sets_img_null_describe">节省流量</string>
+    <string  name="sets_img_has">有图浏览</string>
+    <string  name="sets_img_has_describe">浏览效果更佳</string>
+     <string name="sets_img_smart">智能模式</string>
+     <string name="sets_img_smart_describe">仅wifi下有图浏览</string>
+    <string name="sets_binding_thrid_account">绑定第三方账号</string>
+    <string name="sets_sina">新浪微博</string>
+    <string  name="sets_qq_space">QQ空间</string>
+    <string name="sets_product_info">产品信息</string>
+    <string name="sets_about">关于</string>
+    <string name="sets_feedback">意见反馈</string>
+    <string  name="sets_user_guide">用户引导</string>
+    <string  name="sets_check_update">检查更新</string>
+    <string  name="sets_good">喜欢，就给个好评呗</string>
+    <string  name="ok">确定</string>
+    <string  name="cancel">取消</string>
+ 
+    <!-- listview  -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">正在载入更多</string>
+   
+   <!-- share  分享 -->
+    <string name="share_sms_content">我正在使用“迈点阅读”2.0，全新阅读模式。操作方便，更贴心。新增微信、朋友圈、QQ空间等多种照片分享渠道，推荐给大家~~~</string>
+    <string name="share_errcode_success">发送成功</string>
+	<string name="share_errcode_cancel">发送取消</string>
+	<string name="share_errcode_deny">发送被拒绝</string>
+	<string name="share_errcode_unknown">未知错误</string>
+	<string name="share_sina">新浪微博</string>
+	<string name="share_tencent">腾讯微博</string>
+	<string name="share_qqspace">QQ空间</string>
+	<string name="share_weixin_friend">微信好友</string>
+	<string name="share_weixin_circle">微信朋友圈</string>
+	<string name="share_sms">短信</string>
+	<string name="share_email">邮件</string>
+	<string name="share_to">分享到</string>
+	
+	<!-- apk更新 -->
+	<string name="apk_update_ok">立即升级</string>
+    <string name="apk_update_cancel">暂不升级</string>
+	<string name="soft_update_no">已经是最新版本</string>
+    <string name="soft_update_title">软件更新</string>
+    <string name="soft_update_info">检测到新版本，立即更新吗</string>
+    <string name="soft_update_updatebtn">更新</string>
+    <string name="soft_update_later">稍后更新</string>
+    <string name="soft_updating">正在更新</string>
+    <string name="soft_update_cancel">取消</string>
+    <string name="AA">用的数据没有可用的数据没有可用的据没有可用的数据没有可用的数据</string>
+  
+    <!-- 下载新闻 -->
+    <string name="path">下载路径</string>
+    <string name="button">下载</string>
+    <string name="success">下载完成</string>
+    <string name="error">下载失败</string>
+    <string name="sdcarderror">SDCard不存在或者写保护</string>
+    
+     <!-- *************评论 **********-->
+    <string name="comment_new">最新评论</string>
+    <string name="comment_count">条评论</string>
+    <string name="comment_title">评论</string>
+    <string name="comment_copy">复制</string>
+    <string name="comment_support">0顶</string>
+    
+     <!-- *************个人中心**********-->
+    <string name="frame_right_login">登录账号</string>
+    <string name="frame_right_favorite">我的收藏</string>
+    <string name="frame_right_msg">我的消息</string>
+    <string name="frame_right_offline">离线下载</string>
+    <string name="frame_right_readmode_night">夜间模式</string>
+    <string name="frame_right_readmode_day">日间模式</string>
+    <string name="frame_right_readmode_set">设置</string>
+    
+    <!-- *************关于**********-->
+    <string name="about_weibo">新浪微博：@迈点 </string>
+    <string name="about_email">电子邮箱：news@meadin.com</string>
+    <string name="about_phone">联系电话：0571&#8211;56029709</string>
+    <string name="about_copyright">Copyright © 2013 Meadin.COM ALL Right Reserved</string>
+    
+    <!-- *********** 下载服务************************* -->
+    <string name="download_01">服务器连接失败，请稍后再试！</string>
+     <string name="download_02">服务器端文件不存在，下载失败！</string>
+     <string name="download_03">下载完成</string>
+     <string name="download_04">文件已下载完毕</string>
+     <string name="download_05">正在下载</string>
+   
+</resources>

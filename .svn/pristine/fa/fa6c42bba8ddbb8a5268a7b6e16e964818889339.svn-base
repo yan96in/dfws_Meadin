@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_more"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/actionbar_bg"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:paddingBottom="52dip" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:text="@string/font_size"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="36dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#DCDCDC"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:padding="1dip" >
+
+            <TextView
+                android:id="@+id/txt_font_size_samll"
+                android:layout_width="50dip"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1dip"
+                android:background="@color/whitesomke"
+                android:gravity="center"
+                android:text="@string/font_size_small"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_font_size_mid"
+                android:layout_width="50dip"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1dip"
+                android:background="@color/whitesomke"
+                android:gravity="center"
+                android:text="@string/font_size_mid"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_font_size_big"
+                android:layout_width="50dip"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1dip"
+                android:background="@color/whitesomke"
+                android:gravity="center"
+                android:text="@string/font_size_big"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_font_size_super_big"
+                android:layout_width="50dip"
+                android:layout_height="match_parent"
+                android:background="@color/whitesomke"
+                android:gravity="center"
+                android:text="@string/font_size_super_big"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:text="@string/night_mode"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <ToggleButton
+            android:id="@+id/btn_night_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_butn_toggle"
+            android:checked="true"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+    </RelativeLayout>
+
+</LinearLayout>

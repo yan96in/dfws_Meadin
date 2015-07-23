@@ -1,0 +1,16 @@
+#news list interface
+news_list=http://168.192.122.29:8092/news/list
+news_detail=http://168.192.122.29:8092/news/detail
+news_push=http://168.192.122.29:8092/news/push
+favorites_list=http://168.192.122.29:8092/favorites/list
+favorites_create=http://168.192.122.29:8092/favorites/create
+favorites_destroy=http://168.192.122.29:8092/favorites/destroy
+comments_list=http://168.192.122.29:8092/comments/list
+comments_create=http://168.192.122.29:8092/comments/create
+comments_support=http://168.192.122.29:8092/comments/support
+user_login=http://168.192.122.29:8092/user/login
+user_logout=http://168.192.122.29:8092/user/logout
+user_regist=http://168.192.122.29:8092/user/regist
+common_feedback=http://168.192.122.29:8092/common/feedback
+common_pushSetting=http://168.192.122.29:8092/common/pushSetting
+common_checkVersion=http://168.192.122.29:8092/common/checkVersion

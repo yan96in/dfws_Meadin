@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/header_bg"
+        android:padding="8dip" >
+
+        <ImageView
+            android:id="@+id/set_feedback_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:src="@drawable/selector_goback_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="意见反馈"
+            android:textColor="@color/white"
+            android:textSize="@dimen/main_label" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/set_content"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/set_feeacbak_input_"
+        android:gravity="top"
+        android:hint="请留下您宝贵的意见，我们会不断的改进"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/set_number"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/ic_input_feedback"
+        android:gravity="left|center_vertical"
+        android:hint="手机号/Email:方便我们及时给您回复"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/set_txt_dialog_btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/selector_login_bg"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="@dimen/main_label" />
+
+</LinearLayout>

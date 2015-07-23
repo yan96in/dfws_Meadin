@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/night_sets_model_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:background="@color/header_bg" >
+
+        <ImageView
+            android:id="@+id/login_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/selector_login_bg"
+            android:src="@drawable/selector_goback_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="登录"
+            android:textColor="@color/white"
+            android:textSize="@dimen/main_label" />
+
+        <TextView
+            android:id="@+id/login_regist_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="注册"
+            android:background="@drawable/selector_login_bg"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+   <AutoCompleteTextView
+        android:maxLength="31"
+        android:id="@+id/login_userid_etxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="@color/night_sets_main_color"
+        android:digits="@string/check_login"
+        android:drawableLeft="@drawable/ic_iput_user_52_52_night"
+        android:gravity="left|center_vertical"
+        android:hint="邮箱或迈点通行证" />
+
+
+    <AutoCompleteTextView
+         android:maxLength="20"
+        android:id="@+id/login_password_etxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="@color/night_sets_main_color"
+        android:digits="@string/check_login"
+        android:drawableLeft="@drawable/ic_iput_password_52_52_night"
+        android:gravity="left|center_vertical"
+        android:hint="密码"
+        android:inputType="textPassword"/>
+
+    <TextView
+        android:id="@+id/login_loginbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/selector_login_bg"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dip"
+        android:paddingBottom="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:text="登录"
+        android:textColor="@color/white"
+        android:textSize="@dimen/main_label" />
+
+</LinearLayout>
